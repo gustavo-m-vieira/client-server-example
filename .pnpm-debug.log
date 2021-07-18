@@ -1,29 +1,382 @@
 {
   "0 debug pnpm:scope": {
     "selected": 1,
-    "total": 2
+    "total": 3
   },
-  "1 info pnpm": {
-    "err": {
-      "name": "Error",
-      "message": "@dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1",
-      "code": "ELIFECYCLE",
-      "stack": "Error: @dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1\n    at EventEmitter.<anonymous> (/home/gustavomov/.nvm/versions/node/v14.17.0/lib/node_modules/pnpm/dist/pnpm.cjs:106373:20)\n    at EventEmitter.emit (events.js:376:20)\n    at ChildProcess.<anonymous> (/home/gustavomov/.nvm/versions/node/v14.17.0/lib/node_modules/pnpm/dist/pnpm.cjs:94679:18)\n    at ChildProcess.emit (events.js:376:20)\n    at maybeClose (internal/child_process.js:1055:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@dev-demands/web",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.8.3",
+        "apollo-client": "^2.6.10",
+        "apollo-link": "^1.2.14",
+        "apollo-link-context": "^1.0.20",
+        "apollo-link-error": "^1.1.13",
+        "apollo-link-http": "^1.5.17",
+        "graphql": "^15.5.1",
+        "graphql-tag": "^2.12.5",
+        "react": "^17.0.2",
+        "react-apollo": "^3.1.5",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "web-vitals": "^1.1.2"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+      },
+      "eslintConfig": {
+        "extends": [
+          "react-app",
+          "react-app/jest"
+        ]
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      }
+    },
+    "prefix": "/home/gustavomov/Documentos/projects/client-server-example/packages/web"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": true,
+    "storeDir": "/home/gustavomov/.pnpm-store/v3",
+    "virtualStoreDir": "/home/gustavomov/Documentos/projects/client-server-example/packages/web/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.14.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "^5.14.1"
     }
   },
-  "2 error pnpm": {
-    "errno": 1,
-    "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
-    "pkgid": "@dev-demands/server@1.0.0",
-    "stage": "start",
-    "script": "node -r esm .",
-    "pkgname": "@dev-demands/server",
-    "prefix": "/home/gustavomov/Documentos/projects/client-server-example/packages/server/src",
+  "5 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/react/11.2.7",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/react",
+      "rawSpec": "^11.2.7"
+    }
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/user-event/12.8.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/user-event",
+      "rawSpec": "^12.8.3"
+    }
+  },
+  "7 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-client/2.6.10",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-client",
+      "rawSpec": "^2.6.10"
+    }
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-link/1.2.14",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-link",
+      "rawSpec": "^1.2.14"
+    }
+  },
+  "9 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-link-context/1.0.20",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-link-context",
+      "rawSpec": "^1.0.20"
+    }
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-link-error/1.1.13",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-link-error",
+      "rawSpec": "^1.1.13"
+    }
+  },
+  "11 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/apollo-link-http/1.5.17",
+    "wanted": {
+      "dependentId": ".",
+      "name": "apollo-link-http",
+      "rawSpec": "^1.5.17"
+    }
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graphql/15.5.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "graphql",
+      "rawSpec": "^15.5.1"
+    }
+  },
+  "13 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/graphql-tag/2.12.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "graphql-tag",
+      "rawSpec": "^2.12.5"
+    }
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react/17.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "^17.0.2"
+    }
+  },
+  "15 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-apollo/3.1.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-apollo",
+      "rawSpec": "^3.1.5"
+    }
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dom/17.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "^17.0.2"
+    }
+  },
+  "17 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-router-dom/5.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-router-dom",
+      "rawSpec": "^5.2.0"
+    }
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-scripts/4.0.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-scripts",
+      "rawSpec": "4.0.3"
+    }
+  },
+  "19 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/web-vitals/1.1.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "web-vitals",
+      "rawSpec": "^1.1.2"
+    }
+  },
+  "20 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.14.1",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.14.1",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "22 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.7",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/11.2.7",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "24 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-client/2.6.10",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-client/2.6.10",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link/1.2.14",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link/1.2.14",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "28 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.8.3",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/12.8.3",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link-context/1.0.20",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link-context/1.0.20",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link-error/1.1.13",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "33 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link-error/1.1.13",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "34 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link-http/1.5.17",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "35 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/apollo-link-http/1.5.17",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graphql-tag/2.12.5",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graphql-tag/2.12.5",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "38 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.2",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.2",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "40 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graphql/15.5.1",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/graphql/15.5.1",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "42 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.2",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.2",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-apollo/3.1.5",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-apollo/3.1.5",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "46 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-router-dom/5.2.0",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-router-dom/5.2.0",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "48 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/4.0.3",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/web-vitals/1.1.2",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "resolved"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/web-vitals/1.1.2",
+    "requester": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "status": "found_in_store"
+  },
+  "52 info pnpm": {
     "err": {
       "name": "Error",
-      "message": "@dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1",
-      "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
-      "stack": "Error: @dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1\n    at EventEmitter.<anonymous> (/home/gustavomov/.nvm/versions/node/v14.17.0/lib/node_modules/pnpm/dist/pnpm.cjs:106373:20)\n    at EventEmitter.emit (events.js:376:20)\n    at ChildProcess.<anonymous> (/home/gustavomov/.nvm/versions/node/v14.17.0/lib/node_modules/pnpm/dist/pnpm.cjs:94679:18)\n    at ChildProcess.emit (events.js:376:20)\n    at maybeClose (internal/child_process.js:1055:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+      "message": "GET https://registry.npmjs.org/apollo-cache-memory: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "Error: GET https://registry.npmjs.org/apollo-cache-memory: Not Found - 404\n    at RetryOperation._fn (/home/gustavomov/.nvm/versions/node/v14.17.0/lib/node_modules/pnpm/dist/pnpm.cjs:81264:18)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  },
+  "53 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "apollo-cache-memory is not in the npm registry, or you have no permission to fetch it.\n\nAn authorization header was used: Bearer 8a74[hidden]",
+    "request": {
+      "authHeaderValue": "Bearer 8a7461b1-9b10-41f1-8450-1ecc8ca869d5",
+      "url": "https://registry.npmjs.org/apollo-cache-memory"
+    },
+    "response": {
+      "size": 0,
+      "timeout": 60000
+    },
+    "pkgName": "apollo-cache-memory",
+    "pkgsStack": [],
+    "prefix": "/home/gustavomov/Documentos/projects/client-server-example/packages/web",
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/apollo-cache-memory: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "Error: GET https://registry.npmjs.org/apollo-cache-memory: Not Found - 404\n    at RetryOperation._fn (/home/gustavomov/.nvm/versions/node/v14.17.0/lib/node_modules/pnpm/dist/pnpm.cjs:81264:18)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
     }
   }
 }
