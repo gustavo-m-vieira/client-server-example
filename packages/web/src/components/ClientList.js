@@ -21,13 +21,12 @@ const GET_CLIENT_LIST = gql`
 
 const PAGE_SIZE = 10;
 
-export function ClientList() {
+export function ClientList({ onSelectClient }) {
   const {
     error,
     loading,
     data,
     fetchMore,
-    called,
   } = useQuery(
     GET_CLIENT_LIST, {
       fetchPolicy: 'cache-and-network',
@@ -39,6 +38,8 @@ export function ClientList() {
   );
 
   const clients = data?.clients.items ?? [];
+
+  const handleSelectClient = (client) => () => onSelectClient?.(client.id);
 
   const handleLoadMore = () => {
     fetchMore({
@@ -62,13 +63,13 @@ export function ClientList() {
   };
 
   if (error) return <section><strong>Erro ao buscar clientes</strong></section>
-  if (loading && !called) return <section><p>Carregando...</p></section>
+  if (loading && !data) return <section><p>Carregando...</p></section>
 
   return (
     <section>
       <ul>
         {clients.map((client) => (
-          <li key={client.id}>
+          <li key={client.id} onClick={handleSelectClient(client)}>
             <p>{client.name}</p>
             <p>{client.email}</p>
           </li>
